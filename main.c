@@ -30,8 +30,8 @@ int main(int argc, char** argv) {
     long *ptr;
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
-    *ptr = (long *) buffer;
-    i = strlen(buffer);
+    *ptr = (long *) targetuid;
+    i = strlen(targetuid);
     printf("%d\n",i );
 
     printf("userid: ");
