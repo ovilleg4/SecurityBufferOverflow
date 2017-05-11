@@ -28,10 +28,9 @@ int main(int argc, char** argv) {
     char* hash_ptr;
 
     long *ptr;
-    int i;
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
-    long *ptr = (long *) buffer;
+    *ptr = (long *) buffer;
     i = strlen(buffer);
     printf("%d\n",i );
 
