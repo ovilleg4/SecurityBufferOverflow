@@ -27,12 +27,11 @@ int main(int argc, char** argv) {
     char pw3[16] = {0};
     char* hash_ptr;
 
-    long *ptr;
+    long *ptr = (long *) userid;
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
-    *ptr = (long *) targetuid;
-    i = strlen(targetuid);
-    printf("%d\n",i );
+    printf("userid address: %p\n", (void *) ptr)
+
 
     printf("userid: ");
     fgets(buffer, 1024, stdin);
