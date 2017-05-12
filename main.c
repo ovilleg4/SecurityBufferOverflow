@@ -63,10 +63,10 @@ int main(int argc, char** argv) {
 
     printf("userid: ");
     fgets(buffer, 1024, stdin);
-    //printf("buffer: ");
-    //for (i=0; i < 32; i++)
-    //    printf("%02hhx", buffer[i]);
-    //printf("\n");
+    printf("buffer: ");
+    for (i=0; i < 32; i++)
+        printf("%02hhx", buffer[i]);
+    printf("\n");
     strcpy(userid,buffer);
 
     printf("password1: ");
