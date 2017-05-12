@@ -27,10 +27,11 @@ int main(int argc, char** argv) {
     char pw3[16] = {0};
     char* hash_ptr;
 
+
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
     long *ptr = (long *) buffer;
-    for(i=0;i<32;i++)
+    for(i=0;i<64;i++)
       printf("address %p is %08x\n",(void *) (ptr+i), (unsigned int) (*(ptr+i)) );
     //printf("buffer address: %p\n", (void *) &buffer);
     //ptr = (long *) userid;
