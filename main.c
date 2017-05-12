@@ -28,13 +28,13 @@ int main(int argc, char** argv) {
     char* hash_ptr;
 
     printf("i addr: %p\n", (void *) &i );
-    printf("i sizeof: %d\n\n", sizeof(i));
+    printf("i size: %d bytes\n\n", sizeof(i));
 
     printf("length addr: %p\n", (void *) &length );
-    printf("length sizeof: %d\n\n", sizeof(length));
+    printf("length size: %d bytes\n\n", sizeof(length));
 
     printf("buffer addr: %p\n", (void *) &buffer );
-    printf("buffer sizeof: %d\n\n", sizeof(buffer));
+    printf("buffer size: %d bytes\n\n", sizeof(buffer));
 
     printf("Size of buffer cal using addrs: %d\n",((void *) &length)-((void *) &buffer));
 
