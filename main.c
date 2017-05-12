@@ -34,9 +34,9 @@ int main(int argc, char** argv) {
     printf("length sizeof: %d\n\n", sizeof(length));
 
     printf("buffer addr: %p\n", (void *) &buffer );
-    printf("buffer sizeof: %d\n\n", sizeof(length));
+    printf("buffer sizeof: %d\n\n", sizeof(buffer));
 
-    printf("Size of buffer cal using addrs: %d",((void *) &buffer)-((void *) &length));
+    printf("Size of buffer cal using addrs: %d\n",((void *) &length)-((void *) &buffer));
 
 
 
