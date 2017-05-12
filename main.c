@@ -27,13 +27,20 @@ int main(int argc, char** argv) {
     char pw3[16] = {0};
     char* hash_ptr;
 
+    printf("i addr: %p\n", (void *) &i );
+    printf("i sizeof: %d\n", sizeof(i));
 
-    printf("i address: %p\n", (void *) &i );
-    printf("length address: %p\n", (void *) &length );
-    long *ptr = (long *) buffer;
-    printf("buffer address: %p\n", (void *) &buffer);
-    printf("buffer size: bytes: %d\n", (void *) &length - (void *) &buffer);
-    printf("buffer size using size of %d", sizeof(buffer));
+    printf("length addr: %p\n", (void *) &length );
+    printf("length sizeof: %d\n", sizeof(length));
+
+
+    //printf("i address: %p\n", (void *) &i );
+    //printf("length address: %p\n", (void *) &length );
+    //long *ptr = (long *) buffer;
+    //printf("buffer address: %p\n", (void *) &buffer);
+    //printf("buffer size: bytes: %d\n", (void *) &length - (void *) &buffer);
+    //printf("buffer size using size of %d", sizeof(buffer));
+
     //ptr = (long *) userid;
     //printf("userid address: %p\n", (void *) &userid);
     //ptr = (long *) targetuid;
