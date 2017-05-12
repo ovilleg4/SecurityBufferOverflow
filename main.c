@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
     long *ptr = (long *) buffer;
-    for(i=0;i<1024;i++)
+    for(i=0;i<128;i++)
       printf("address %p is %08x\n",(void *) (ptr+i), (unsigned int) (*(ptr+i)) );
     //printf("buffer address: %p\n", (void *) &buffer);
     //ptr = (long *) userid;
