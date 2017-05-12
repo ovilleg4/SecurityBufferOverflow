@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
     long *ptr = (long *) buffer;
     printf("buffer address: %p\n", (void *) &buffer);
     printf("buffer size: bytes: %d\n", (void *) &length - (void *) &buffer);
+    printf("buffer size using size of %d", sizeof(buffer));
     //ptr = (long *) userid;
     //printf("userid address: %p\n", (void *) &userid);
     //ptr = (long *) targetuid;
