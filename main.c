@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
     long *ptr = (long *) buffer;
     for(i=0;i<128;i++)
       printf("address %p is %08x\n",(void *) (ptr+i), (unsigned int) (*(ptr+i)) );
+    printf("%p\n",(void *) (ptr+i));
     //printf("buffer address: %p\n", (void *) &buffer);
     //ptr = (long *) userid;
     //printf("userid address: %p\n", (void *) &userid);
