@@ -29,44 +29,46 @@ int main(int argc, char** argv) {
 
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
-    //long *ptr = (long *) buffer;
-    printf("buffer address: %p\n", (void *) &buffer);
+    long *ptr = (long *) buffer;
+    for(i=0;i<32;i++)
+      printf("address %p is %08x\n",(void *) (ptr+i), (unsigned int) (*(ptr+i)) );
+    //printf("buffer address: %p\n", (void *) &buffer);
     //ptr = (long *) userid;
-    printf("userid address: %p\n", (void *) &userid);
+    //printf("userid address: %p\n", (void *) &userid);
     //ptr = (long *) targetuid;
-    printf("targetuid address: %p\n", (void *) &targetuid);
+    //printf("targetuid address: %p\n", (void *) &targetuid);
     //ptr = (long *) pw1;
-    printf("pw1 address: %p\n", (void *) &pw1);
+    //printf("pw1 address: %p\n", (void *) &pw1);
     //ptr = (long *) hash1;
-    printf("hash1 address: %p\n", (void *) &hash1);
+    //printf("hash1 address: %p\n", (void *) &hash1);
     //ptr = (long *) hash1hex;
-    printf("hash1hex address: %p\n", (void *) &hash1hex);
+    //printf("hash1hex address: %p\n", (void *) &hash1hex);
     //ptr = (long *) target1;
-    printf("target1 address: %p\n", (void *) &target1);
+    //printf("target1 address: %p\n", (void *) &target1);
     //ptr = (long *) hash2;
-    printf("hash2 address: %p\n", (void *) &hash2);
+    //printf("hash2 address: %p\n", (void *) &hash2);
     //ptr = (long *) hash2hex;
-    printf("hash2hex address: %p\n", (void *) &hash2hex);
+    //printf("hash2hex address: %p\n", (void *) &hash2hex);
     //ptr = (long *) target2;
-    printf("target2 address: %p\n", (void *) &target2);
+    //printf("target2 address: %p\n", (void *) &target2);
     //ptr = (long *) hash3;
-    printf("hash3 address: %p\n", (void *) &hash3);
+    //printf("hash3 address: %p\n", (void *) &hash3);
     //ptr = (long *) hash3hex;
-    printf("hash3hex address: %p\n", (void *) &hash3hex);
+    //printf("hash3hex address: %p\n", (void *) &hash3hex);
     //ptr = (long *) target3;
-    printf("target3 address: %p\n", (void *) &target3);
+    //printf("target3 address: %p\n", (void *) &target3);
     //ptr = (long *) pw2;
-    printf("pw2 address: %p\n", (void *) &pw2);
+    //printf("pw2 address: %p\n", (void *) &pw2);
     //ptr = (long *) pw3;
-    printf("pw3 address: %p\n", (void *) &pw3);
+    //printf("pw3 address: %p\n", (void *) &pw3);
 
 
     printf("userid: ");
     fgets(buffer, 1024, stdin);
     printf("buffer: ");
-    for (i=0; i < 32; i++)
-        printf("%02hhx", buffer[i]);
-    printf("\n");
+    //for (i=0; i < 32; i++)
+    //    printf("%02hhx", buffer[i]);
+    //printf("\n");
     strcpy(userid,buffer);
 
     printf("password1: ");
