@@ -36,7 +36,50 @@ int main(int argc, char** argv) {
     printf("buffer addr: %p\n", (void *) &buffer );
     printf("buffer size: %d bytes\n\n", sizeof(buffer));
 
-    printf("Size of buffer cal using addrs: %d\n",((void *) &length)-((void *) &buffer));
+    printf("userid addr: %p\n", (void *) &userid );
+    printf("userid size: %d bytes\n\n", sizeof(userid));
+
+    printf("targetuid addr: %p\n", (void *) &targetuid );
+    printf("targetuid size: %d bytes\n\n", sizeof(targetuid));
+
+    printf("pw1 addr: %p\n", (void *) &pw1 );
+    printf("pw1 size: %d bytes\n\n", sizeof(pw1));
+
+    printf("hash1 addr: %p\n", (void *) &hash1 );
+    printf("hash1 size: %d bytes\n\n", sizeof(hash1));
+
+    printf("hash1hex addr: %p\n", (void *) &hash1hex );
+    printf("hash1hex size: %d bytes\n\n", sizeof(hash1hex));
+
+    printf("target1 addr: %p\n", (void *) &target1 );
+    printf("target1 size: %d bytes\n\n", sizeof(target1));
+
+    printf("hash2 addr: %p\n", (void *) &hash2 );
+    printf("hash2 size: %d bytes\n\n", sizeof(hash2));
+
+    printf("hash2hex addr: %p\n", (void *) &hash2hex );
+    printf("hash2hex size: %d bytes\n\n", sizeof(hash2hex));
+
+    printf("target2 addr: %p\n", (void *) &target2 );
+    printf("target2 size: %d bytes\n\n", sizeof(target2));
+
+    printf("hash3 addr: %p\n", (void *) &hash3 );
+    printf("hash3 size: %d bytes\n\n", sizeof(hash3));
+
+    printf("hash3hex addr: %p\n", (void *) &hash3hex );
+    printf("hash3hex size: %d bytes\n\n", sizeof(hash3hex));
+
+    printf("target3 addr: %p\n", (void *) &target3 );
+    printf("target3 size: %d bytes\n\n", sizeof(target3));
+
+    printf("pw2 addr: %p\n", (void *) &pw2 );
+    printf("pw2 size: %d bytes\n\n", sizeof(pw2));
+
+    printf("pw3 addr: %p\n", (void *) &pw3 );
+    printf("pw3 size: %d bytes\n\n", sizeof(pw3));
+
+    printf("hash_ptr addr: %p\n", (void *) &hash_ptr );
+    printf("hash_ptr size: %d bytes\n\n", sizeof(hash_ptr));
 
 
 
@@ -49,8 +92,8 @@ int main(int argc, char** argv) {
 
     //ptr = (long *) userid;
     //printf("userid address: %p\n", (void *) &userid);
-    //ptr = (long *) targetuid;
-    //printf("targetuid address: %p\n", (void *) &targetuid);
+    //ptr = (long *) hash1hex;
+    //printf("pw3 address: %p\n", (void *) &hash_ptr);
     //ptr = (long *) pw1;
     //printf("pw1 address: %p\n", (void *) &pw1);
     //ptr = (long *) hash1;
@@ -168,7 +211,7 @@ int main(int argc, char** argv) {
     }
     hash3hex[64]=0;
 
-    if (strncmp(userid, targetuid,16)==0 &&
+    if (strncmp(userid, hash_ptr,16)==0 &&
         strncmp(target1, hash1hex, 64)==0 &&
         strncmp(target2, hash2hex, 64)==0 &&
         strncmp(target3, hash3hex, 64)==0) {
