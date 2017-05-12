@@ -31,12 +31,12 @@ int main(int argc, char** argv) {
     printf("i address: %p\n", (void *) &i );
     printf("length address: %p\n", (void *) &length );
     long *ptr = (long *) buffer;
-    for(i=0;i<128;i++)
-      printf("address %p is %08x\n",(void *) (ptr+i), (unsigned int) (*(ptr+i)) );
+    for(i=0;i<=128;i++)
+      printf("address %p is %lx\n",(void *) (ptr+i), (*(ptr+i)) );
     printf("%p\n",(void *) ptr);
     ptr = (long *) userid;
-    for(i=0;i<2;i++)
-      printf("address %p is %08x\n",(void *) (ptr+i), (unsigned int) (*(ptr+i)) );
+    for(i=0;i<=2;i++)
+      printf("address %p is %lx\n",(void *) (ptr+i), (*(ptr+i)) );
     printf("%p\n",(void *) ptr);
     //printf("buffer address: %p\n", (void *) &buffer);
     //ptr = (long *) userid;
